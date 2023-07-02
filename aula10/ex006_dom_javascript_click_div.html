@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area{
+            font-family: Arial, Helvetica, sans-serif;
+            background: chocolate;
+            color:  green;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;/*colocar texto no meio da div*/
+            text-align: center;
+        }
+        /*
+         <div id="area" onclick="clicar()" onmouseover="entrar()" onmouseout="sair()">
+        */
+    </style>
+</head>
+<body>
+    
+    <div id="area" >
+        interaja....
+    </div>
+    
+
+    <script>
+
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        function clicar() {  
+            a.innerText= 'clicou!'
+            a.style.background ='red'
+        }
+        function entrar(){
+            a.innerText='Entrou'
+            a.style.background ='blue'
+        }
+        function sair(){
+            a.innerText='Saiu'
+            a.style.background ='yellow'
+        }
+    </script>
+</body>
+</html>
