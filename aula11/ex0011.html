@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema estrangeiro</title>
+</head>
+<body>  
+    <h1>Digite seu pais</h1>
+    Seu país <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="verificar" onclick="verificador()"><br>
+    <div id="res">
+
+    </div>
+    <script>
+
+    function verificador(){
+
+              var pais = window.document.querySelector('input#txtpais')
+              var res = window.document.querySelector('div#res')
+              res.innerHTML = `<p>Seu pais é <strong>${pais.value}</strong></p>`
+              if (pais.value  == 'brasil'){
+                  res.innerText = `Morando no ${pais.value}, você é brasileiro` 
+                }else{
+                  res.innerHTML = `Você é um estrageiro e vive fora do ${pais.value}` 
+                }
+    }
+    </script>
+</body>
+</html>
