@@ -8,6 +8,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
+div{
+    text-align: center;/*Coloca a div centralizada e imagem dentro dela tambem*/
+    padding: 8px;
+}
 img {
   border-radius: 50%;
   width: 250px;
