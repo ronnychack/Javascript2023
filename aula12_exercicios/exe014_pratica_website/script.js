@@ -4,7 +4,7 @@ function carregar() {
     var data = new Date();
     var hora = data.getHours();
     //comentario pode prejudicar o codigo?
-    
+    //var hora = 13 , so descomentar que irá mudar manualmente a figura. 
     msg.innerHTML = `Agora são ${hora} horas.`;
     if (hora >= 0 && hora < 12) {
         img.src = 'manha.jpg';
