@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/aula12_exercicios/modelo/estilo.css">
+    <link rel="stylesheet" href="/aula12_exercicios/ex015_pratica/estilo.css">
     <title>Verificador de Idade</title>
 </head>
 <body>
@@ -13,10 +13,22 @@
 
     <section>
         <div>
-          teste
+            <p>Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsexo" id="mascu" checked>
+                <label for="mascu">Masculino</label>
+                <input type="radio" name="radsexo" id="femi">
+                <label for="femi">Feminino</label>
+            </p>
+            <p>
+                <input type="submit" value="Verificando seus dados" onclick="verificar()">
+            </p>
         </div>
-        <div>
-            olá
+
+        <div id="resultado">
+            Prencha os dados acima para ver o resultado.
         </div>
     </section>
 
