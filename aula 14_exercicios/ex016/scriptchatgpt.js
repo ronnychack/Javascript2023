@@ -6,11 +6,22 @@ function contar() {
     
     var mensagemDetecao = `<br>Início da contagem: ${cinicio} e Fim da contagem: ${cfim} e contar em: ${cpassos} em ${cpassos}<br><br>`;
     var contagem = "";
-    
-    for (var i = cinicio; i <= cfim; i += cpassos) {
-        contagem += i + "👉 ";
-        res.innerHTML += `Passos executados:👉 ${i}<br>`;
+    if(cpassos<=0){
+        window.alert('Passo Invalido! Consideranddo PASSO com valor 1')
+        cpassos = 1
     }
+    if(cinicio <cfim){
+        for (var i = cinicio; i <= cfim; i += cpassos) {
+            contagem += i + "👉 ";
+            res.innerHTML += `Passos executados:👉 ${i}<br>`;
+        }
+    }else{
+        for (var i = cinicio; i >= cfim; i = i -cpassos){
+            contagem += i + "👉 ";
+            res.innerHTML += `Passos executados:👉 ${i}<br>`;
+        }
+    }
+
     // Substituir último espaço vazio por bandeira emoji
     contagem = contagem.trimRight() + "🏁"+ "<br>"+ "<br>"+ "Em lista:";
     res.innerHTML = mensagemDetecao + contagem + "<br>" + res.innerHTML;
