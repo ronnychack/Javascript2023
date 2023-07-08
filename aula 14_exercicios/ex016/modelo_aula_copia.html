@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/aula 14_exercicios/ex016/estilo.css">
+    <title>Vamos Contar</title>
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+
+    <section>
+        <form onsubmit="event.preventDefault(); contar();">
+        <div id="dados">
+          <p><label for="inicio">Inicio:</label>
+            <input type="number" name="inicio" id="txi">
+          </p><br>
+          <p><label for="fim">Fim:</label>
+            <input type="number" name="fim" id="txf"><br><br>
+          </p>
+          <p><label for="passos">Passos:</label>
+            <input type="number" name="passo" id="txp"><br><br>
+          </p>
+          <p>
+            <input type="submit" value="Contar">
+            <input type="reset" value="limpar dados" onclick="limparDados()">
+          </p>
+        </form>
+        </div>
+        <div id="res" ><br>
+            Preparando Contagem....
+        </div>
+    </section>
+
+    <footer> 
+        <p>&copy;Rone em videos</p>
+     </footer>
+     <script src="script_aula.js"></script>
+</body>
+</html>
