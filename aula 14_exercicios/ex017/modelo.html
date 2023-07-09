@@ -14,34 +14,23 @@
 </head>
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>Tabuada</h1>
     </header>
 
     <section>
-        <form>
         <div>
-          <p><label for="ntabuada">Digite qual tabuada deseja:</label>
-            <input type="number" name="ntabuada" id="ntabuada">
-            <input type="submit" value="gerar"><br><br>
+          <p><label for="txtn">Digite qual tabuada deseja:</label>
+            <input type="number" name="num" id="txtn">
+            <input type="submit" value="Gerar Tabuada" onclick="tabuada()"><br><br>
           </p>
         </div>
+
         <div>
-            <select size="12">
-                <optgroup label="tabuada">
-                <option value="opcao1">8 x 0 = 0</option>
-                <option value="opcao2">8 x 1 = 8</option>
-                <option value="opcao3">8 x 2 = 16</option>
-                <option value="opcao4">8 x 3 = 24</option>
-                <option value="opcao5">8 x 4 = 32</option>
-                <option value="opcao6">8 x 5 = 40</option>
-                <option value="opcao7">8 x 6 = 48</option>
-                <option value="opcao8">8 x 7 = 56</option>
-                <option value="opcao9">8 x 8 = 64</option>
-                <option value="opcao10">8 x 9 = 72</option>
-                <option value="opcao10">8 x 10 = 80</option>
-              </select>
+            <select name="tabuada" id="seltab" size="11">
+              <option>Digite um numero:</option>  
+            </select>
+            
         </div>
-        </form>
     </section>
 
     <footer> 
