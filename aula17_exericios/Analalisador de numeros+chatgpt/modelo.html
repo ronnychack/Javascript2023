@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/aula17_exericios/Analalisador de numeros/estilo.css">
+    <title>Analisador de Numeros</title>
+    <style>
+        /* Estilos para aumentar o tamanho do select */
+        select#selectn {
+            width: 100px; /* Defina a altura desejada */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+
+    <section>
+        <div>
+             <p><label for="numero">Numero (entre 1 e 100):</label>
+            <input type="number" name="numero" id="numero">
+            <input type="submit" value="Adicionar" onclick="adicionarNumero()"><br><br> 
+            </p>
+        </div>
+
+        <div>
+            <select name="selectnumero" id="selectn" size="11">
+            </select>
+            <br><input type="button" value="Finalizar" onclick="somarNumeros()">
+        </div>
+        <div id="resultado">Resultado</div>
+    </section>
+
+    <footer> 
+        <p>&copy;Rone em videos</p>
+     </footer>
+     <script src="script.js"></script>
+</body>
+</html>
