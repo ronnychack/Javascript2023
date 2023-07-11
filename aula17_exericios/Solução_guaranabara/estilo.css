@@ -19,6 +19,9 @@ header h1{
     color: white;
     margin-bottom: 10px;
 }
+#flista {
+    width: 130px;
+}
 section{
     background-color: white;
     border-radius: 10px;
